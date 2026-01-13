@@ -7,6 +7,8 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
+import java.time.LocalDate;
+
 @Entity
 @Data
 @RequiredArgsConstructor
@@ -16,6 +18,6 @@ public class Book {
     private int id;
     private String title;
     private String author;
-    private String publishedDate;
+    private LocalDate publishedDate;
     private String isbn;
 }
